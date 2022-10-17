@@ -3,7 +3,7 @@ COPY static /usr/share/nginx/html
 # Twistlock Container Defender - app embedded
 ADD twistlock_defender_app_embedded.tar.gz /tmp
 ENV DEFENDER_TYPE="appEmbedded"
-ENV DEFENDER_APP_ID="simplewhale"
+ENV DEFENDER_APP_ID="simplewhale-gcp"
 ENV FILESYSTEM_MONITORING="false"
 ENV WS_ADDRESS="wss://us-east1.cloud.twistlock.com:443"
 ENV DATA_FOLDER="/tmp"
