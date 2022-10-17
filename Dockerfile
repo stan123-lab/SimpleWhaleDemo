@@ -1,5 +1,6 @@
 FROM nginx:alpine
 COPY static /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]
 # Twistlock Container Defender - app embedded
 ADD twistlock_defender_app_embedded.tar.gz /tmp
 ENV DEFENDER_TYPE="appEmbedded"
